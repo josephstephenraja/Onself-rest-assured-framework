@@ -1,10 +1,10 @@
 package api.utilies;
 
-import org.hamcrest.Matchers;
+
 import org.testng.Assert;
 
 import io.restassured.response.Response;
-import io.restassured.response.ValidatableResponse;
+
 
 public class APIValidations extends Reports {
 	public static void responsecodevalidation(Response response, int statuscode) {
@@ -40,7 +40,7 @@ public class APIValidations extends Reports {
 			String responseBody = response.getBody().asString();
 	        String searchString = stringToSearch;
 	        
-	        Assert.assertTrue(responseBody.contains(searchString), "Response body does not contain the string: " + searchString);
+	        Assert.assertTrue(responseBody.contains(searchString));
 			testcase.pass("successfully validated response body, response is ::"+ response.body().asString());
 		}catch(AssertionError e) {
 			testcase.fail("Does not contains the expected response body");

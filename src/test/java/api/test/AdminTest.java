@@ -3,15 +3,12 @@ package api.test;
 
 
 
-import org.testng.Assert;
+
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.aventstack.extentreports.ExtentReports;
 
-import DataUtilies.DataProviderUtilies;
-import Excel.ToReadExcel;
 import Excel.ToReadTestData;
 import api.endpoint.AdminEndPoints;
 import api.utilies.APIValidations;
@@ -71,6 +68,7 @@ public class AdminTest extends APIValidations {
 	
 
 	}
+	
 	
 	 @AfterClass
 	 public static void ReportCooldown() {
