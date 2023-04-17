@@ -5,7 +5,7 @@
     <classes>
       <class name="api.test.AdminTest">
         <methods>
-          <include name="loginAsAdmin"/>
+          <include name="my_Profile"/>
           <include name="toGenerateReport"/>
           <include name="ReportCooldown"/>
         </methods>

@@ -26,7 +26,7 @@ public class AdminTest extends APIValidations {
 	  }
 	 
 	
-	 @Test(priority = -1)
+	
 	public void loginAsAdmin() throws Throwable {
 	Reports.ReportCreateTestcase("POST");
 	
@@ -37,10 +37,9 @@ public class AdminTest extends APIValidations {
 		responsetimevalidation(response);
 		responseHeader(response,ToReadTestData.readExcel(1, 0,"Sheet1"),ToReadTestData.readExcel(1, 1,"Sheet1"));
 		
-		
 	}
-	
-	@Test(priority = 0)
+	@Test(dependsOnMethods = {"keyGeneration"})
+
 
 	public  void my_Profile() throws Throwable {
 		Reports.ReportCreateTestcase("GET");
@@ -50,11 +49,12 @@ public class AdminTest extends APIValidations {
         responsetimevalidation(response);
         responsecodevalidation(response, 200);
         responseHeader(response,ToReadTestData.readExcel(2, 0,"Sheet1"),ToReadTestData.readExcel(2, 1,"Sheet1"));
+    
 		
 
 	}
 
-	@Test(priority = 1)
+	@Test(dependsOnMethods = {"keyGeneration"})
 
 	public void activeStatus() throws Throwable {
 		Reports.ReportCreateTestcase("PATCH");
@@ -68,6 +68,12 @@ public class AdminTest extends APIValidations {
 	
 
 	}
+	@Test
+public void keyGeneration() throws Throwable {
+	Reports.ReportCreateTestcase("token");
+	AdminEndPoints.toGenerate();
+
+}
 	
 	
 	 @AfterClass

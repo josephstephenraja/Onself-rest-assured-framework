@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary"></span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Apr 13, 2023 01:29:24 pm</span></a>
+<a href="#"><span class="badge badge-primary">Apr 17, 2023 07:13:36 pm</span></a>
 </li>
 </ul>
 </div>
@@ -81,7 +81,7 @@
           <div class="test-detail">
             <p class="name">API RESPONSE</p>
             <p class="text-sm">
-              <span>13:29:24 pm</span> / <span>00:00:00:000</span>
+              <span>19:13:36 pm</span> / <span>00:00:00:000</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -90,8 +90,8 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">API RESPONSE</h5>
-<span class='badge badge-success'>04.13.2023 13:29:24</span>
-<span class='badge badge-danger'>04.13.2023 13:29:24</span>
+<span class='badge badge-success'>04.17.2023 19:13:36</span>
+<span class='badge badge-danger'>04.17.2023 19:13:36</span>
 <span class='badge badge-default'>00:00:00:000</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 </div>
@@ -103,9 +103,9 @@
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">POST</p>
+            <p class="name">token</p>
             <p class="text-sm">
-              <span>13:29:24 pm</span> / <span>00:00:05:447</span>
+              <span>19:13:36 pm</span> / <span>00:00:00:000</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -113,11 +113,35 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">POST</h5>
-<span class='badge badge-success'>04.13.2023 13:29:24</span>
-<span class='badge badge-danger'>04.13.2023 13:29:30</span>
-<span class='badge badge-default'>00:00:05:447</span>
+<h5 class="test-status text-pass">token</h5>
+<span class='badge badge-success'>04.17.2023 19:13:36</span>
+<span class='badge badge-danger'>04.17.2023 19:13:36</span>
+<span class='badge badge-default'>00:00:00:000</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
+</div>
+</div>
+</div>          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="3"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">PATCH</p>
+            <p class="text-sm">
+              <span>19:13:42 pm</span> / <span>00:00:01:149</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">PATCH</h5>
+<span class='badge badge-success'>04.17.2023 19:13:42</span>
+<span class='badge badge-danger'>04.17.2023 19:13:44</span>
+<span class='badge badge-default'>00:00:01:149</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
 </div>
 </div>
 </div><div class="detail-body mt-4">
@@ -126,30 +150,89 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>1:29:30 pm</td>
+        <td>7:13:43 pm</td>
         <td>
-          successfully validated status code, status code is ::200
+          successfully validated status code, status code is ::400
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>1:29:30 pm</td>
+        <td>7:13:43 pm</td>
         <td>
-          successfully validated status line, status line is ::200
+          successfully validated response body, response is ::{"error":{"err":"Bad Request","errorCode":2,"msg":{"is_active":"\"is_active\" is required"}},"sc":false,"time":1681738992787}
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>1:29:30 pm</td>
+        <td>7:13:43 pm</td>
         <td>
           successfully validated Response time and response time less than 5000 milliseconds
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>1:29:30 pm</td>
+        <td>7:13:44 pm</td>
         <td>
-          successfully validated header value nginx/1.18.0 (Ubuntu)
+          successfully validated header value application/json; charset=utf-8
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="4"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">GET</p>
+            <p class="text-sm">
+              <span>19:13:44 pm</span> / <span>00:00:01:028</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">GET</h5>
+<span class='badge badge-success'>04.17.2023 19:13:44</span>
+<span class='badge badge-danger'>04.17.2023 19:13:45</span>
+<span class='badge badge-default'>00:00:01:028</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:13:45 pm</td>
+        <td>
+          successfully validated status line, status line is ::200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:13:45 pm</td>
+        <td>
+          successfully validated Response time and response time less than 5000 milliseconds
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:13:45 pm</td>
+        <td>
+          successfully validated status code, status code is ::200
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:13:45 pm</td>
+        <td>
+          successfully validated header value keep-alive
         </td>
       </tr>
   </tbody>
@@ -171,19 +254,19 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Apr 13, 2023 01:29:24 pm</h3>
+<h3>Apr 17, 2023 07:13:36 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Apr 13, 2023 01:29:30 pm</h3>
+<h3>Apr 17, 2023 07:13:45 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-pass">Tests Passed</p>
-<h3>2</h3>
+<h3>4</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -206,7 +289,7 @@
 </div>
 <div class="card-footer">
 <div><small data-tooltip='100%'>
-<b>2</b> tests passed
+<b>4</b> tests passed
 </small>
 </div>
 <div>
@@ -228,7 +311,7 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'><b>4</b> events passed</small></div>
+<div><small data-tooltip='100%'><b>8</b> events passed</small></div>
 <div>
 <small data-tooltip='0%'><b>0</b> events failed,
 <b data-tooltip='%'>0</b> others
@@ -247,7 +330,7 @@
 </div></div>
 <script>
 var timeline = {
-"API RESPONSE":0,"POST":5.447
+"API RESPONSE":0,"token":0,"PATCH":1.149,"GET":1.028
 };
 </script>
 <div class="row">
@@ -256,7 +339,7 @@ var timeline = {
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 2,
+passParent: 4,
 failParent: 0,
 warningParent: 0,
 skipParent: 0,
@@ -273,7 +356,7 @@ warningGrandChild: 0,
 skipGrandChild: 0,
 infoGrandChild: 0,
 eventsCount: 5,
-passEvents: 4,
+passEvents: 8,
 failEvents: 0,
 warningEvents: 0,
 skipEvents: 0,
